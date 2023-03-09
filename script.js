@@ -37,10 +37,15 @@ function addItem() {
   checkIcon.className = "fas fa-check-square";
   checkIcon.style.color = "lightgray";
 
+  const audio = new Audio(
+    "https://cdn.pixabay.com/download/audio/2022/03/24/audio_0aefc7456d.mp3?filename=pencil_check_mark_2-105940.mp3"
+  );
+
   checkIcon.addEventListener("click", function () {
     if (checkIcon.style.color === "lightgray") {
       checkIcon.style.color = "green";
       task_input.classList.add("checked");
+      audio.play();
     } else {
       checkIcon.style.color = "lightgray";
       task_input.classList.remove("checked");
