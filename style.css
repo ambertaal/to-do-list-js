@@ -14,7 +14,6 @@ body {
 
 .sidenav {
   border-right: 1px solid #ccc;
-
   height: 100%;
   width: 260px;
   position: fixed;
@@ -45,6 +44,10 @@ body {
 .sidenav a:hover {
   color: #ffffff;
   background-color: #000000;
+}
+
+.new-list {
+  padding-top: 900px;
 }
 
 .main {
@@ -84,7 +87,28 @@ body {
 
 .nav h2 {
   font-size: 2rem;
-  margin: 16px 0;
+  margin: 16px 8px;
+}
+
+.nav i {
+  font-size: 16px;
+  color: darkgray;
+  margin: 0 8px;
+}
+
+.nav i:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.to-do-list-title {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 25%;
+  margin: 8px 0;
 }
 
 .user-input {

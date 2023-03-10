@@ -104,6 +104,31 @@ function removeItems() {
   toDoItemsArray = toDoItemsArray.filter(
     ({ checkIcon }) => checkIcon.style.color != "green"
   );
+}
 
-  console.log(toDoItemsArray);
+const listTitleDiv = document.getElementById("list-title");
+
+const editIconTitle = document.getElementById("edit-title");
+editIconTitle.addEventListener("click"),
+  function () {
+    editTitle();
+  };
+
+function editTitle() {
+  let title_input = document.createElement("input");
+
+  editIconTitle.addEventListener("click", function () {
+    if (title_input.readOnly === true) {
+      title_input.readOnly = false;
+      title_input.focus();
+      title_input.style.color = "darkgreen";
+      editIcon.className = "fa-regular fa-floppy-disk";
+      editIcon.style.color = "darkgreen";
+    } else {
+      title_input.readOnly = true;
+      title_input.style.color = "purple";
+      editIcon.className = "fa-solid fa-pen-to-square";
+      editIcon.style.color = "darkgray";
+    }
+  });
 }

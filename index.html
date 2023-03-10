@@ -13,16 +13,25 @@
   </head>
   <body>
     <div class="sidenav">
-      <h2>To do Lists</h2>
-      <a href="#groceries">Groceries</a>
-      <a href="#house-hold">House hold</a>
-      <a href="#work">Work</a>
-      <a href="#holiday-ideas">Holiday ideas</a>
+      <h2>To do Lists<i class="fa fa-check"></i></h2>
+      <div class="lists">
+        <a href="#groceries">Groceries</a>
+        <a href="#house-hold">House hold</a>
+        <a href="#work">Work</a>
+        <a href="#holiday-ideas">Holiday ideas</a>
+      </div>
+      <div class="new-list">
+        <a href="#new-list">+ New list</a>
+      </div>
     </div>
+
     <div class="main">
       <div class="container">
         <div class="nav">
-          <h2>To-do List</h2>
+          <div class="to-do-list-title">
+            <div class="list-title"></div>
+            <i id="edit-title" class="fa-solid fa-pen-to-square"></i>
+          </div>
           <div class="user-input">
             <input id="input" type="text" /><button id="submit">
               Add task
