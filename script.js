@@ -106,7 +106,7 @@ function removeItems() {
   );
 }
 
-const listTitleDiv = document.getElementById("list-title");
+const listTitleDiv = document.getElementByClassName("list-title");
 
 const editIconTitle = document.getElementById("edit-title");
 editIconTitle.addEventListener("click"),
@@ -115,7 +115,18 @@ editIconTitle.addEventListener("click"),
   };
 
 function editTitle() {
+  let divParent = document.createElement("div");
+
   let title_input = document.createElement("input");
+
+  divParent.className = "title";
+
+  // adds the input to the title div
+  divParent.appendChild(title_input);
+
+  title_input.value = input.value;
+  title_input.type = "text";
+  title_input.readOnly = true;
 
   editIconTitle.addEventListener("click", function () {
     if (title_input.readOnly === true) {
@@ -131,4 +142,6 @@ function editTitle() {
       editIcon.style.color = "darkgray";
     }
   });
+
+  listTitleDiv.appendChild(divParent);
 }
