@@ -8,8 +8,58 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: linear-gradient(to right, #e22865, #37adcd);
-  color: white;
+  background-color: #fffff0;
+  color: #474747;
+}
+
+.sidenav {
+  border-right: 1px solid #ccc;
+
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fffff0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav h2 {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #474747;
+  display: block;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #474747;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 .container {
@@ -57,8 +107,8 @@ body {
 }
 
 .user-input input:focus {
-  box-shadow: 0 0 5px #e22865;
-  border: 1px solid #e22865;
+  box-shadow: 0 0 5px #4d4d4d;
+  border: 1px solid #4d4d4d;
 }
 
 .user-input button {
@@ -74,8 +124,8 @@ body {
 }
 
 .user-input button:hover {
-  background-color: transparent;
-  color: white;
+  background-color: #ffbc49;
+  border: 1px solid #ffbc49;
 }
 
 .to-do-items {
@@ -102,8 +152,8 @@ body {
 }
 
 .item:hover {
-  box-shadow: 0 0 20px #e22865;
-  border: 1px solid #e22865;
+  box-shadow: 0 0 5px #4d4d4d;
+  border: 1px solid #4d4d4d;
 }
 
 .item i {
@@ -125,6 +175,11 @@ body {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 16px 0;
+}
+
+.clear-items button:hover {
+  background-color: #ffbc49;
+  border: 1px solid #ffbc49;
 }
 
 @media (max-width: 768px) {

@@ -12,19 +12,30 @@
     <title>To-do List</title>
   </head>
   <body>
-    <div class="container">
-      <div class="nav">
-        <h2>To-do List</h2>
-        <div class="user-input">
-          <input id="input" type="text" /><button id="submit">Add task</button>
+    <div class="sidenav">
+      <h2>To do Lists</h2>
+      <a href="#groceries">Groceries</a>
+      <a href="#house-hold">House hold</a>
+      <a href="#work">Work</a>
+      <a href="#holiday-ideas">Holiday ideas</a>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="nav">
+          <h2>To-do List</h2>
+          <div class="user-input">
+            <input id="input" type="text" /><button id="submit">
+              Add task
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="to-do-items"></div>
-      <div class="clear-items">
-        <button id="clear-items">Delete all completed tasks</button>
+      <div class="container">
+        <div class="to-do-items"></div>
+        <div class="clear-items">
+          <button id="clear-items">Delete all completed tasks</button>
+        </div>
       </div>
     </div>
 
